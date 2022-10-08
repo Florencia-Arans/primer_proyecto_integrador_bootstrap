@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*.header__flex{
+    /*background-color: rgb(19, 89, 159);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    height: 12vh;
+    width: 100%;
+    position: fixed; top: 0%;
+}*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 40%;
+    padding-left: 6rem;
+}
+.header__nav{
+    background-color: rgb(52, 58, 64)
+    /*width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+}
+/*.confBA{
+    /*background-color: aqua;
+}*/
+.img__logo{
+    width: 30%;
+}
+.barraSup{
+    margin-right: 1.5rem;
+    /*background-color: brown;*/
+}
+
+/*.link_nav{
+    text-decoration: none;
+    color: white;
+    padding-right: 6rem;
+}*/
+.main{
+    /*background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 89vh;
+    /*display: flex;
+    justify-content: flex-end;
+    align-items: center;*/
+}
+.tamCarrusel{
+    width: 100%;
+}
+.imgCarrusel{
+    filter: brightness(50%);
+}
+.textoPrincipal{
+    width: 40%;
+    text-align: right;
+    color: white;
+    /*background-color: blueviolet;*/
+    margin-right: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.buttonBox{
+    display: inline-block;
+    /*background-color: brown;*/
+}
+.buttonMain{
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    color: white;
+}
+.hvr-grow-shadow:hover{
+    color: white;
+}
+#CT{
+    background-color: rgb(41, 167, 68);
+    margin-left: 0.5rem;
+}
+.buttonUp{
+    display: inline-block;
+    padding: 1.6rem;
+    background-color: rgba(163, 163, 163, 0.401);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: rgba(255, 255, 255, 0.562);
+    z-index: 10;
+}
+.bt-UP:hover{
+    background-color: rgb(163, 163, 163);
+    color: white;
+}
+.oradores{
+    /*height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    padding-top: 1vh;
+    /*background-color: rgb(43, 202, 226);*/
+}    
+.padreTarjetas{
+    height: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 3vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-bottom: 12vh;
+    /*background-color: brown;*/
+}
+.tarjetas_flex{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: chartreuse;*/
+}
+.orador{
+    /*width: 21vw;
+    height: 76vh;
+    border: 1px solid;
+    border-color: rgb(193, 192, 192);
+    border-radius: 0.3rem;*/
+    transition: transform 1s;
+    box-shadow: 2px 7px 20px 0px rgba(83, 83, 83, 0.54);
+}
+.hover:hover{
+    transform: scale(1.05,1.05);
+}
+.img_box{
+    height: 61%;
+}
+.img_tarjetas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.parrafoTarjeta{
+    margin-top: 1rem;
+}
+.descripTarjeta{
+    width: 90%;
+    padding: 1rem;
+}
+.contenedorBotones{
+    display: flex;
+}
+.buttonJS{
+    margin-top: 0rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+}
+.buttonRA{
+    margin-top: 0rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+    /*background-color: rgb(23, 162, 185);*/
+}
+.buttonNG{
+    margin-top: 0rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+}
+.buttonSU{
+    margin-top: 0rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+}
+h6{
+    text-align: center;
+    margin-top: 1rem;
+}
+h2{
+    text-align: center;
+}
+.lugarYfecha{
+    display: flex;
+    height: 100vh;
+}
+.elLugar{
+    background-image: url(../assets/images/honolulu.jpg);
+    background-size: cover;
+    width: 50%;
+}
+.laFecha{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    display: flex;
+    /*background-color: aqua;*/
+}
+.parrafoFecha{
+    margin: 3rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /*background-color: brown;*/
+}
+.seccForm{
+    margin: 0 auto;
+    width: 50%;
+    height: 88vh;
+    /*background-color: blue; */
+    display: flex;
+    align-items: center;   
+}
+.subrayado{
+    text-decoration: underline dotted;
+}
+.divNombre1{
+    display: flex;
+    justify-content: flex-start;
+}
+.divNombre2{
+    display: flex;
+    justify-content: flex-end;
+}
+.form{
+    display: block;
+    width: 95%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.parrForm{
+    font-size: 0.9rem;
+}
+.enviar{
+    padding: 0.375rem 0.75rem;
+}
+.BotonEnviar{
+    background-color: rgb(150, 201, 62);
+    border-color: rgb(137, 184, 55);
+    color: white;
+}
+.BotonEnviar:hover {
+    background-color: rgb(150, 201, 62);
+    border-color: rgb(137, 184, 55);
+    color: white;
+}
+footer{
+    background-color: rgb(29, 60, 78);
+    display: flex;
+}
+.navbarInf{
+    /*background-color: rgb(29, 60, 78);*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.error{
+    background-image: url(../assets/images/error-404.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 76vh;
+}
+
+/*.barraInferior{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.link_footer{
+    text-decoration: none;
+    color: white;
+}
+.contacto{
+    height: 88vh;
+    padding-top: 12vh;
+}*/
+@media screen and (max-width: 1200px) {
+    .navbar-nav{
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .header__flex{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .confBA{
+        padding-left: 0 !important;
+        margin-right: 3rem;
+    }
+    .navegador{
+        /*background-color: chocolate;*/
+        margin-right: 0 !important;
+        z-index: 10;
+    }
+    .tamCarrusel{
+        height: 85vh !important;
+    }
+    .main{
+        height: 85vh;
+    }
+    .imgCarrusel{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .textoPrincipal{
+        width: 60%;
+        top: 30%;
+        left: 30%;
+        right: 10%;
+        bottom: 10%;
+    }
+    .tituloConf{
+        font-size: 2rem;
+    }
+    .parrTextPpal{
+        font-size: 1rem !important;
+    }
+    .buttonMain{
+        font-size: 1rem !important;
+    }
+    .padreTarjetas{
+        padding-top: 3vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 12vh;
+    }
+    .tarjetas_flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .row-cols-md-3 > * {
+        flex: 0 0 auto;
+        width: 90% !important;
+        justify-content: space-between;
+    }
+    .orador{
+        /*background-color: coral;*/
+        flex-direction: row;
+        margin-bottom:1rem;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+    }
+    .divImgTarj{
+        width: 100%;
+        object-fit: cover;
+    }
+    .img_tarjetas{
+        width: 100% !important;
+    }
+    .card-title{
+        font-size: 1.5rem !important;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*background-color: crimson;*/
+    }
+    .card-text{
+        font-size: 1.5rem !important;
+    }
+    .seccForm{
+        width: 70%;
+    }
+    .navbarInf{
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .itemNavInf{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__nav{
+        text-align: left;
+        z-index: 10;
+    }
+    .tamCarrusel{
+        height: 85vh !important;
+    }
+    .main{
+        height: 85vh;
+    }
+    .imgCarrusel{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .textoPrincipal{
+        width: 60%;
+        top: 30%;
+        left: 30%;
+        right: 10%;
+        bottom: 10%;
+    }
+    .tituloConf{
+        font-size: 2rem;
+    }
+    .parrTextPpal{
+        font-size: 1rem !important;
+    }
+    .buttonMain{
+        font-size: 1rem !important;
+    }
+    .padreTarjetas{
+        padding-top: 3vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 12vh;
+    }
+    .tarjetas_flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .row-cols-md-3 > * {
+        flex: 0 0 auto;
+        width: 90% !important;
+        justify-content: space-between;
+    }
+    .orador{
+        /*background-color: coral;*/
+        flex-direction: row;
+        margin-bottom:1rem;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+    }
+    .divImgTarj{
+        width: 350%;
+        object-fit: cover;
+    }
+    .img_tarjetas{
+        width: 100% !important;
+    }
+    .card-title{
+        font-size: 1.1rem !important;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*background-color: crimson;*/
+    }
+    .card-text{
+        font-size: 1.1rem !important;
+    }
+    .laFecha{
+        width: 50%;
+    }
+    .parrafoFecha{
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .parrafoLugar{
+        font-size: 1rem !important;
+    }
+    .seccForm{
+        width: 80%;
+        height: 77vh;
+    }
+    .navbarInf{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header__nav{
+        z-index: 10;
+    }
+    .tamCarrusel{
+        height: 85vh !important;
+    }
+    .main{
+        height: 85vh;
+    }
+    .imgCarrusel{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .textoPrincipal{
+        width: 60%;
+        top: 35%;
+        left: 28%;
+        right: 10%;
+        bottom: 10%;
+    }
+    .tituloConf{
+        font-size: 1.5rem;
+    }
+    .parrTextPpal{
+        font-size: 1rem !important;
+    }
+    .buttonMain{
+        font-size: 1rem !important;
+    }
+    .padreTarjetas{
+        padding-top: 3vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 12vh;
+    }
+    .tarjetas_flex{
+        display: flex;
+        height: 50%;
+        width: 50%;
+        padding-top: 0;
+    }
+    .divImgTarj{
+        width: 100%;
+        object-fit: cover;
+    }
+    .img_tarjetas{
+        object-fit: cover;
+    }
+    .card-title{
+        font-size: 1rem !important;
+    }
+    .card-text{
+        font-size: 0.7rem !important;
+    }
+    .orador{
+        flex-direction: column;
+        margin-bottom:1rem;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+    }
+    .lugarYfecha {
+        flex-direction: column;
+    }
+    .elLugar{
+        width: 100%;
+        height: 50%;
+    }
+    .laFecha{
+        width: 100%;
+        height: 50%;
+    }
+    .parrafoFecha{
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .parrafoLugar{
+        font-size: 0.7rem !important;
+    }
+    .seccForm{
+        margin: 0 auto;
+        width: 80%;
+        height: 100vh;
+        /*background-color: blue; */
+    }
+    .navbarInf{
+        flex-direction: column;
+        text-align: start;
+        font-size: 0.8rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .itemNavInf{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    }
+@media screen and (max-width: 436px) {
+    .header__nav{
+        z-index: 10;
+    }
+    .header__flex{
+        padding-left: 0 !important;
+    }
+    .confBA{
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        position: relative;
+        align-items: center;
+    }
+    .tamCarrusel{
+        height: 87vh !important;
+    }
+    .main{
+        height: 87vh;
+    }
+    .imgCarrusel{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .textoPrincipal{
+        width: 80%;
+        top: 40%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+    }
+    .tituloConf{
+        font-size: 1.5rem;
+    }
+    .parrTextPpal{
+        font-size: 0.8rem !important;
+    }
+    .buttonMain{
+        font-size: 0.7rem !important;
+    }
+    .padreTarjetas{
+        padding-top: 3vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 12vh;
+    }
+    .tarjetas_flex{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 90%;
+    }
+    .img_tarjetas{
+        height: 30vh;
+        object-fit: cover;
+    }
+    .card-title{
+        font-size: 1rem !important;
+    }
+    .card-text{
+        font-size: 0.7rem !important;
+    }
+    .seccForm{
+        height: 67vh;
+    }
+}
+@media screen and (max-width: 300px) {
+    .tamCarrusel{
+        height: 87vh !important;
+    }
+    .main{
+        height: 87vh;
+    }
+    .imgCarrusel{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .textoPrincipal{
+        width: 80%;
+        top: 25%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+    }
+    .tituloConf{
+        font-size: 2rem;
+    }
+    .parrTextPpal{
+        font-size: 1.2rem !important;
+    }
+    .buttonMain{
+        font-size: 1.2rem !important;
+    }
+    .tarjetas_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .img_tarjetas{
+        height: 38vh;
+        object-fit: cover;
+    }
+    .card-title{
+        font-size: 1.5rem !important;
+    }
+    .card-text{
+        font-size: 1.2rem !important;
+    }
+    .seccForm{
+        height: 73vh;
+    }
+    .navbarInf{
+        flex-direction: column;
+        text-align: start;
+        font-size: 0.8rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .itemNavInf{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    }
+    
