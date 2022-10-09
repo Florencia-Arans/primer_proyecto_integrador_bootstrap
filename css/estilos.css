@@ -527,7 +527,7 @@ footer{
     }
     .seccForm{
         width: 80%;
-        height: 77vh;
+        height: 100vh;
     }
     .navbarInf{
         flex-direction: row;
@@ -622,6 +622,22 @@ footer{
         width: 80%;
         height: 100vh;
         /*background-color: blue; */
+    }
+    .NombreApellido{
+        flex-direction: column;
+    }
+    .divNombre1{
+        margin-left: 0 auto;
+    }
+    .divNombre2{
+        margin-left: 0 auto;
+    }
+    .form{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .textareaForm{
+        font-size: 1rem !important;
     }
     .navbarInf{
         flex-direction: column;
