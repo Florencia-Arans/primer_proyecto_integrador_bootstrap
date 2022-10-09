@@ -582,6 +582,7 @@ footer{
         object-fit: cover;
     }
     .img_tarjetas{
+        height: 20%;
         object-fit: cover;
     }
     .card-title{
