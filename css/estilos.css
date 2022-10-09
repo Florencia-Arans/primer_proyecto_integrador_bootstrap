@@ -300,6 +300,7 @@ footer{
     background-size: cover !important;
     background-position: center !important;
     height: 76vh;
+    z-index: 1;
 }
 
 /*.barraInferior{
@@ -692,6 +693,9 @@ footer{
     }
 }
 @media screen and (max-width: 300px) {
+    .header__nav{
+        z-index: 10;
+    }
     .tamCarrusel{
         height: 87vh !important;
     }
@@ -733,7 +737,7 @@ footer{
         font-size: 1.2rem !important;
     }
     .seccForm{
-        height: 73vh;
+        height: 100vh;
     }
     .navbarInf{
         flex-direction: column;
