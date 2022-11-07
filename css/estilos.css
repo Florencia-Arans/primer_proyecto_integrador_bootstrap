@@ -336,6 +336,8 @@ footer{
     background-color: rgb(37, 163, 66);
     border-radius: 0.8rem;
     color: white !important;
+    width: 18%;
+    text-align: center;
 }
 .nvCT{
     background-color: rgb(37, 163, 66);
@@ -389,6 +391,10 @@ footer{
         margin-right: 0 !important;
         padding-left: 0 !important;
         margin-left: 0 !important;
+    }
+    .nvCT{
+        width: 18%;
+        text-align: center;
     }
     .header__flex{
         padding-left: 0 !important;
@@ -496,6 +502,10 @@ footer{
     .header__nav{
         text-align: left;
         z-index: 10;
+    }
+    .nvCT{
+        width: 18%;
+        text-align: center;
     }
     .tamCarrusel{
         height: 85vh !important;
@@ -609,6 +619,10 @@ footer{
     .header__nav{
         z-index: 10;
     }
+    .nvCT{
+        width: 18%;
+        text-align: center;
+    }
     .tamCarrusel{
         height: 85vh !important;
     }
@@ -656,8 +670,11 @@ footer{
         width: 100%;
         object-fit: cover;
     }
+    .cardBody{
+        width: 100%;
+    }
     .img_tarjetas{
-        height: 20%;
+        height: 100%;
         object-fit: cover;
     }
     .card-title{
@@ -667,7 +684,7 @@ footer{
         font-size: 0.7rem !important;
     }
     .orador{
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom:1rem;
         box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
         -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
@@ -738,6 +755,10 @@ footer{
 @media screen and (max-width: 436px) {
     .header__nav{
         z-index: 10;
+    }
+    .nvCT{
+        width: 18%;
+        text-align: center;
     }
     .header__flex{
         padding-left: 0 !important;
@@ -815,13 +836,16 @@ footer{
     .card-text{
         font-size: 0.7rem !important;
     }
+    .orador{
+        flex-direction: column;
+    }
     .seccForm{
         height: 100vh;
     }
     .descuentos{
         width: 80vw !important;
     }
-    .text-center{
+    .parrOrador{
         font-size: 1rem !important;
     }
     .card-title{
@@ -863,6 +887,10 @@ footer{
 @media screen and (max-width: 300px) {
     .header__nav{
         z-index: 10;
+    }
+    .nvCT{
+        width: 18%;
+        text-align: center;
     }
     .confBA{
         display: flex;
@@ -912,7 +940,7 @@ footer{
         height: 20vh;
         object-fit: cover;
     }
-    .text-center{
+    .parrOrador{
         font-size: 1rem !important;
     }
     .card-title{
