@@ -15,7 +15,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark header__nav">
                 <div class="container-fluid header__flex">
-                  <a class="navbar-brand text-white ms-5 ps-5 confBA" href="#">
+                  <a class="navbar-brand text-white ms-5 ps-5 confBA" href="../index.html">
                     <img src="../assets/images/codoacodo.png" alt="logo de codo a codo" width="100">
                     Conferencia Buenos Aires
                   </a>
@@ -37,7 +37,7 @@
                         <a class="nav-link text-white-50 hvr-float barraSup" href="../index.html#conviertete_en_orador">Conviértete en orador</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-success hvr-float barraSup" href="#">Comprar tickets</a>
+                        <a class="nav-link hvr-float barraSup text-white nvComprarTickets nvCT" href="#">Comprar tickets</a>
                       </li>
                     </ul>
                   </div>
@@ -55,12 +55,98 @@
                 <div class="col-sm-12 col-xl-1"><a class="link_nav" href="./pages/comprar_tickets.html">Comprar tickets</a></div>
             </nav> -->
         </header>
-        <main>
-            <div class="error">
-
+        <section class="w-50 m-auto mt-3">
+          <div class="container justify-content-between pt-3">
+            <div class="row">
+              <div class="col">
+                <div class="card text-white mb-3 borde1" style="max-width: 18rem;">
+                  <div class="text-center fs-5 pt-3 pb-3 bg-primary">Estudiante</div>
+                  <div class="card-body text-dark">
+                    <p class="card-text text-center">Tiene un descuento</p>
+                    <h4 class="card-title text-center">80%</h4>
+                    <p class="card-text text-secondary cardTickets text-center">*Presentar documentación</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-white mb-3 borde2" style="max-width: 18rem;">
+                  <div class="text-center fs-5 pt-3 pb-3 bg-info">Trainee</div>
+                  <div class="card-body text-dark">
+                    <p class="card-text text-center">Tiene un descuento</p>
+                    <h4 class="card-title text-center">50%</h4>
+                    <p class="card-text text-secondary cardTickets text-center">*Presentar documentación</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-white mb-3 borde3" style="max-width: 18rem;">
+                  <div class="text-center fs-5 pt-3 pb-3 bg-warning">Junior</div>
+                  <div class="card-body text-dark">
+                    <p class="card-text text-center">Tiene un descuento</p>
+                    <h4 class="card-title text-center">15%</h4>
+                    <p class="card-text text-secondary cardTickets text-center">*Presentar documentación</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </main>
-            
+            </div>
+        </section>
+
+        <section class="w-50 m-auto">
+          <form class="container">
+            <div>
+              <h6>VENTA</h6>
+              <h1 class="text-center fw-bold">VALOR DE TICKET $200</h1>
+            </div>
+            <div class="row g-2">
+              <div class="col-md">
+                <div>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                </div>
+              </div>
+              <div class="col-md">
+                <div>
+                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
+                </div>
+              </div>
+              <div class="mb-3 mt-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
+              </div>
+              <div class="col-md">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" min="1" class="form-control" id="cantidadTickets" placeholder="Cantidad" required>
+              </div>
+              <div class="col-md">
+                <label for="categoria" class="form-label">Categoría</label>
+                <select class="form-select" id="categoria" aria-label="Categoría" required>
+                  <option value="" selected>-- Seleccione --</option>
+                  <option value="1">Sin Categoría</option>
+                  <option value="2">Estudiante</option>
+                  <option value="3">Trainee</option>
+                  <option value="4">Junior</option>
+                </select>
+              </div>
+              <div>
+                <div class="mt-3 py-4 alert alert-primary" role="alert">
+                  Total a pagar $ <span id="totalPago" class="fw-bold"></span>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+              <div class="col w-50 enviar fs-5 mp-2">
+                <div class="row mb-3">
+                    <button type="reset" class="btn botonForm fs-5" id="btnBorrar">Borrar</button>
+                </div>
+            </div>
+            <div class="col w-50 enviar fs-5 ms-2">
+              <div class="row mb-3">
+                  <button type="submit" class="btn botonForm fs-5" id="btnResumen">Resumen</button>
+              </div>
+            </div>
+            </div>      
+            </div>
+          </form>
+        </section>
         <footer> <!--sección navegador inferior-->
            <div class="container">
             <div class="row navbarInf">
@@ -75,5 +161,6 @@
            </div>
         </footer>
         <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/comprar_tickets.js"></script>
     </body>
 </html>

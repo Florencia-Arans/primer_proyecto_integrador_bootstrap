@@ -270,16 +270,53 @@ h2{
 .enviar{
     padding: 0.375rem 0.75rem;
 }
-.BotonEnviar{
+.botonForm{
     background-color: rgb(150, 201, 62);
     border-color: rgb(137, 184, 55);
     color: white;
 }
-.BotonEnviar:hover {
+/*.BotonEnviar:hover {
     background-color: rgb(150, 201, 62);
     border-color: rgb(137, 184, 55);
     color: white;
-}
+}*/
+@-webkit-keyframes botonForm {
+    50% {
+      background-color: rgba(150, 201, 62, 0.75);
+    }
+  }
+  @keyframes botonForm {
+    50% {
+      background-color: rgba(89, 139, 2, 0.75);
+    }
+  }
+.botonForm {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .botonForm:hover{
+    -webkit-animation-name: botonForm;
+    animation-name: botonForm;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgb(137, 184, 55);
+    background-color: rgb(150, 201, 62);
+    color: white;
+  }
 footer{
     background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,114,1) 100%, rgba(30,83,114,1) 100%);
     display: flex;
@@ -295,6 +332,16 @@ footer{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+.nvComprarTickets:hover{
+    background-color: rgb(37, 163, 66);
+    border-radius: 0.8rem;
+    color: white !important;
+}
+.nvCT{
+    background-color: rgb(37, 163, 66);
+    border-radius: 0.8rem;
+    color: white !important;
+}
 .error{
     background-image: url(../assets/images/error-404.jpg);
     background-repeat: no-repeat !important;
@@ -303,7 +350,23 @@ footer{
     height: 76vh;
     z-index: 1;
 }
-
+.cardTickets{
+    font-size: 0.8rem;
+}
+.borde1{
+    border: 0.1rem solid #0d6efd !important;
+}
+.borde2{
+    border: 0.1rem solid #0dcaf0 !important;
+}
+.borde3{
+    border: 0.1rem solid #ffc107 !important;
+}
+.totalPagar{
+    background-color: rgb(207, 226, 255) !important;
+    color: rgb(8, 66, 152) !important;
+    /*border: 1px solid rgb(182, 212, 254) !important;*/
+}
 /*.barraInferior{
     display: flex;
     justify-content: space-evenly;
