@@ -912,6 +912,9 @@ footer{
         height: 20vh;
         object-fit: cover;
     }
+    .text-center{
+        font-size: 1rem !important;
+    }
     .card-title{
         font-size: 1.2rem !important;
     }
