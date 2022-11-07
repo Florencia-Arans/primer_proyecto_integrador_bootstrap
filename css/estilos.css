@@ -568,6 +568,13 @@ footer{
     .card-text{
         font-size: 1.1rem !important;
     }
+    .descuentos{
+        width: 80vw !important;
+        font-size: 4rem !important;
+    }
+    .seccTicket{
+        width: 80vw !important;
+    }
     .lugarYfecha {
         flex-direction: column;
     }
@@ -614,16 +621,21 @@ footer{
     }
     .textoPrincipal{
         width: 60%;
-        top: 35%;
-        left: 28%;
-        right: 10%;
-        bottom: 10%;
+        top: 25%;
+        left: 20%;
+        bottom: 50%;
     }
     .tituloConf{
         font-size: 1.5rem;
     }
     .parrTextPpal{
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 0%;
+    }
+    .buttonBox{
+        display: flex;
+        text-align: center;
+        margin-top: 0%;
     }
     .buttonMain{
         font-size: 1rem !important;
@@ -637,7 +649,7 @@ footer{
     .tarjetas_flex{
         display: flex;
         height: 50%;
-        width: 50%;
+        width: 100%;
         padding-top: 0;
     }
     .divImgTarj{
@@ -686,6 +698,12 @@ footer{
         width: 80%;
         height: 100vh;
         /*background-color: blue; */
+    }
+    .descuentos{
+        width: 80vw !important;
+    }
+    .seccTicket{
+        width: 80vw !important;
     }
     .NombreApellido{
         flex-direction: column;
@@ -742,35 +760,54 @@ footer{
     }
     .textoPrincipal{
         width: 80%;
-        top: 40%;
+        top: 30%;
         left: 10%;
         right: 10%;
         bottom: 10%;
     }
     .tituloConf{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .parrTextPpal{
         font-size: 0.8rem !important;
     }
+    .buttonBox{
+        display: flex;
+        justify-content: center;
+    }
     .buttonMain{
         font-size: 0.7rem !important;
     }
+    .buttonUp{
+        font-size: large;
+    }
     .padreTarjetas{
         padding-top: 3vh;
-        padding-left: 5vh;
-        padding-right: 5vh;
         padding-bottom: 12vh;
+        padding-left: 0;
+        padding-right: 0;
     }
     .tarjetas_flex{
         display: flex;
         flex-direction: column;
         height: 50%;
-        width: 90%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .img_tarjetas{
-        height: 30vh;
+        height: 45vh;
         object-fit: cover;
+    }
+    .parrafoFecha{
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    .parrafoLugar{
+        margin-bottom: 0%;
+    }
+    .buttonMain{
+        margin-top: 5%;
     }
     .card-title{
         font-size: 1rem !important;
@@ -780,6 +817,21 @@ footer{
     }
     .seccForm{
         height: 100vh;
+    }
+    .descuentos{
+        width: 80vw !important;
+    }
+    .text-center{
+        font-size: 1.5rem !important;
+    }
+    .card-title{
+        font-size: 2rem !important;
+    }
+    .card-text{
+        font-size: 1rem !important;
+    }
+    .seccTicket{
+        width: 80vw !important;
     }
     .NombreApellido{
         flex-direction: column;
@@ -847,6 +899,9 @@ footer{
     }
     .buttonUp{
         font-size: 1.5rem;
+    }
+    .buttonUp{
+        font-size: large;
     }
     .tarjetas_flex{
         display: flex;
