@@ -29,41 +29,40 @@ function resetTotalAPagar() {
 function totalAPagar() {
     quitarClaseError();
     if (nombre.value === "") {
-        alert("Por favor, escriba su nombre");
         nombre.classList.add('is-invalid');
         nombre.focus();
+        alert("Por favor, escriba su nombre");
         return;
     }
 
     if (apellido.value === "") {
-        alert("Por favor, escriba su apellido");
         apellido.classList.add('is-invalid');
         apellido.focus();
+        alert("Por favor, escriba su apellido");
         return;
     }
-
     if (email.value === "") {
-        alert("Por favor, escriba su email");
         email.classList.add('is-invalid');
         email.focus();
+        alert("Por favor, escriba su email");
         return;
     }
     if (!emailValido(email.value)) {
-        alert("Por favor, escriba un email válido");
         email.classList.add('is-invalid');
         email.focus();
+        alert("Por favor, escriba un email válido");
         return;
     }
     if ((cantidadTickets.value == 0) || ( isNaN(cantidadTickets.value))) {
-        alert("Por favor, ingrese correctamente la cantidad de tickets");
         cantidadTickets.classList.add('is-invalid');
         cantidadTickets.focus();
+        alert("Por favor, ingrese correctamente la cantidad de tickets");
         return;
     }
     if (categoria.value == "") {
-        alert("Por favor, seleccione una categoría");
         categoria.classList.add('is-invalid');
         categoria.focus();
+        alert("Por favor, seleccione una categoría");
         return;
     }
 
@@ -83,7 +82,7 @@ case '4':
     totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
     break;
 default:
-    alert("por favor haga bien las cosas");
+    totalValorTickets = error;
     break;
 } 
 console.log(totalValorTickets)
