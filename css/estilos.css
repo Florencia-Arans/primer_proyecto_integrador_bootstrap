@@ -476,10 +476,12 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*background-color: crimson;*/
     }
     .card-text{
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
+    }
+    .cardTickets{
+        font-size: 1rem !important;
     }
     .seccForm{
         width: 70%;
@@ -560,7 +562,7 @@ footer{
         -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
     }
     .divImgTarj{
-        width: 350%;
+        width: 100%;
         object-fit: cover;
     }
     .img_tarjetas{
@@ -573,14 +575,28 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*background-color: crimson;*/
     }
     .card-text{
         font-size: 1.1rem !important;
     }
     .descuentos{
         width: 80vw !important;
-        font-size: 4rem !important;
+    }
+    .divContainer{
+        display: flex;
+        flex-direction: row;    
+        justify-content: center !important;
+    }
+    .divDescuentos{
+        width: 80vw !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto;
+        padding-left: 0rem;
+        flex-wrap: nowrap !important;
+    }
+    .tituloDescuentos{
+        font-size: large;
     }
     .seccTicket{
         width: 80vw !important;
@@ -714,10 +730,24 @@ footer{
         margin: 0 auto;
         width: 80%;
         height: 100vh;
-        /*background-color: blue; */
+    }
+    .divContainer{
+        align-items: center !important;
+        justify-content: center !important;
     }
     .descuentos{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .divDescuentos{
         width: 80vw !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto;
+        padding-left: 0rem;
+        flex-wrap: nowrap !important;
     }
     .seccTicket{
         width: 80vw !important;
@@ -836,14 +866,20 @@ footer{
     .card-text{
         font-size: 0.7rem !important;
     }
+    .divDescuentos{
+        flex-direction: column;
+        width: 80vw !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto;
+        padding-left: 0rem;
+        flex-wrap: nowrap !important;
+    }
     .orador{
         flex-direction: column;
     }
     .seccForm{
         height: 100vh;
-    }
-    .descuentos{
-        width: 80vw !important;
     }
     .parrOrador{
         font-size: 1rem !important;
