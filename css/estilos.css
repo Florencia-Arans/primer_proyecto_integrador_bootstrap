@@ -337,11 +337,17 @@ footer{
     border-radius: 0.8rem;
     color: white !important;
     text-align: center;
+    margin-left: -1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 .nvCT{
     background-color: rgb(37, 163, 66);
     border-radius: 0.8rem;
     color: white !important;
+    margin-left: -1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 .error{
     background-image: url(../assets/images/error-404.jpg);
@@ -390,10 +396,6 @@ footer{
         margin-right: 0 !important;
         padding-left: 0 !important;
         margin-left: 0 !important;
-    }
-    .nvCT{
-        width: 75%;
-        text-align: center;
     }
     .header__flex{
         padding-left: 0 !important;
@@ -498,21 +500,12 @@ footer{
         padding-bottom: 0.5rem !important;
     }
 }
-@media screen and (max-width: 992px) {
-    .nvCT{
-        width: 15%;
-        text-align: center;
-    }
-}
 @media screen and (max-width: 950px) {
     .header__nav{
         text-align: left;
         z-index: 10;
     }
-    .nvCT{
-        width: 18%;
-        text-align: center;
-    }
+
     .tamCarrusel{
         height: 85vh !important;
     }
@@ -638,10 +631,6 @@ footer{
 @media screen and (max-width: 767px) {
     .header__nav{
         z-index: 10;
-    }
-    .nvCT{
-        width: 30%;
-        text-align: center;
     }
     .tamCarrusel{
         height: 85vh !important;
@@ -790,10 +779,6 @@ footer{
     .header__nav{
         z-index: 10;
     }
-    .nvCT{
-        width: 50%;
-        text-align: center;
-    }
     .header__flex{
         padding-left: 0 !important;
     }
@@ -927,10 +912,6 @@ footer{
 @media screen and (max-width: 300px) {
     .header__nav{
         z-index: 10;
-    }
-    .nvCT{
-        width: auto;
-        text-align: center;
     }
     .confBA{
         display: flex;
