@@ -336,7 +336,6 @@ footer{
     background-color: rgb(37, 163, 66);
     border-radius: 0.8rem;
     color: white !important;
-    width: 18%;
     text-align: center;
 }
 .nvCT{
@@ -393,7 +392,7 @@ footer{
         margin-left: 0 !important;
     }
     .nvCT{
-        width: 18%;
+        width: 75%;
         text-align: center;
     }
     .header__flex{
@@ -499,7 +498,12 @@ footer{
         padding-bottom: 0.5rem !important;
     }
 }
-
+@media screen and (max-width: 992px) {
+    .nvCT{
+        width: 15%;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 950px) {
     .header__nav{
         text-align: left;
@@ -636,7 +640,7 @@ footer{
         z-index: 10;
     }
     .nvCT{
-        width: 18%;
+        width: 30%;
         text-align: center;
     }
     .tamCarrusel{
@@ -787,7 +791,7 @@ footer{
         z-index: 10;
     }
     .nvCT{
-        width: 18%;
+        width: 50%;
         text-align: center;
     }
     .header__flex{
@@ -925,7 +929,7 @@ footer{
         z-index: 10;
     }
     .nvCT{
-        width: 18%;
+        width: auto;
         text-align: center;
     }
     .confBA{
